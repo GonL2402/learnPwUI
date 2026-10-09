@@ -24,5 +24,10 @@ export class RegisterPage {
         await expect(UiHelper.findElement(this.page, this.firstNameWarningText)).toHaveText("First name is required");
         await expect(UiHelper.findElement(this.page, this.lastNameWarningText)).toHaveText("Last name is required");
         await expect(UiHelper.findElement(this.page, this.emailWarningText)).toHaveText("Enter valid email");
+
+        this.page.getAttribute();
+        this.page.getByRole();
+        this.page.getByText();
+        this.page.getByTitle();
     }
 }
